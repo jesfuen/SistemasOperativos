@@ -35,13 +35,13 @@ main(int argc, char *argv[])
 	char *endptr;
 
 	n = strtol(argv[1], &endptr, 10);
-	if (*endptr != '\0' || n < 0) {
+	if (*endptr != '\0' || n < 0L) {
 		fprintf(stderr, "error: bad value %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 
 	l = strtol(argv[2], &endptr, 10);
-	if (*endptr != '\0' || l < 0) {
+	if (*endptr != '\0' || l < 0L) {
 		fprintf(stderr, "error: bad value %s\n", argv[2]);
 		exit(EXIT_FAILURE);
 	}
